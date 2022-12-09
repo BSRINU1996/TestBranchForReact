@@ -6,6 +6,7 @@ class MadhuSudhanaHari extends React.Component {
             <div>
                 <h1>I am MadhuSudhana!  i am an {this.props.occupation}</h1>
                 <h1>i am madhuSudhana and my age is {this.props.myAge}</h1>
+                <h1>my fav subject is {this.props.favSubject}</h1>
             </div>
         )
     }

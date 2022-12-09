@@ -50,7 +50,7 @@ class StateComponent extends Component {
 
     render() {
         let favSubject = "FLUID DYNAMICS";
-        let occupation = "SoftwareENgineer";
+        let occupation = "sdgsdg";
         return (
             <div>
                 <h1 style={{ color: "blue" }}>
@@ -60,7 +60,14 @@ class StateComponent extends Component {
                 {/* <button onClick={this.chnageThisAddress}> to change address</button> */}
 
                 <Grade myState={this.state.myState} myAddress={this.state.myAddress} clgName={this.state.myCollege} id={this.state.myId} favSubject="FLUID DYNAMICS" />
-                <Madhu occupation="SoftwareENgineer" myAge={this.state.myAge} />
+                <Madhu
+                    occupation={occupation}
+                    myAge={this.state.myAge}
+                    favSubject={favSubject}
+
+
+                />
+                {/* <Madhu occupation={occupation} myAge={this.state.myAge} /> */}
                 {/* eventhough we don't use this prop in the MadhuSudhanaHari component, in react developer tools  this prop will be reflected.  */}
                 <h1 style={{ color: "orange" }}>{this.state.myState}</h1>
                 <button onClick={this.updateMyNativeState}>click me get my native state!</button>
